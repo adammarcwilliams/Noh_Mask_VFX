@@ -9,6 +9,12 @@ public class VFXController : MonoBehaviour
     [SerializeField]
     private float kitsuneDisperse = 0;
 
+    [SerializeField]
+    private bool playKitsune;
+
+    [SerializeField]
+    private bool stopKitsune;
+
     private VisualEffect visualEffect;
 
 
@@ -21,5 +27,17 @@ public class VFXController : MonoBehaviour
     void Update()
     {
         visualEffect.SetFloat("kitsune_disperse", kitsuneDisperse);
+
+        if (playKitsune)
+        {
+            visualEffect.SendEvent("OnPlayKitsune");
+            playKitsune = false;
+        }
+
+        if (stopKitsune)
+        {
+            visualEffect.SendEvent("OnStopKitsune");
+            stopKitsune = false;
+        }
     }
 }
