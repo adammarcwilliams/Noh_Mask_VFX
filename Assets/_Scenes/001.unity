@@ -363,7 +363,10 @@ VisualEffect:
   m_ResetSeedOnPlay: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: kitsune_disperse
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -411,3 +414,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kitsuneDisperse: 0
+  playKitsune: 0
+  stopKitsune: 0

@@ -5,39 +5,58 @@ using UnityEngine.Experimental.VFX;
 
 public class VFXController : MonoBehaviour
 {
-    [Range(0, 100)]
     [SerializeField]
-    private float kitsuneDisperse = 0;
-
-    [SerializeField]
-    private bool playKitsune;
-
-    [SerializeField]
-    private bool stopKitsune;
+    private bool transitionNextMask = false;
 
     private VisualEffect visualEffect;
 
+    private string[] masks = new string[2];
 
-    void Start()
+    private int maskIndex = 0;
+
+
+    private void Start()
     {
         visualEffect = GetComponent<VisualEffect>();
+        masks[0] = "Kitsune";
+        masks[1] = "Hannya";
+        StartCoroutine(PlayFirstMask());
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void Update()
     {
-        visualEffect.SetFloat("kitsune_disperse", kitsuneDisperse);
-
-        if (playKitsune)
+        if (transitionNextMask)
         {
-            visualEffect.SendEvent("OnPlayKitsune");
-            playKitsune = false;
+            StartCoroutine(TransitionNextMask());
+            transitionNextMask = false;
         }
+    }
 
-        if (stopKitsune)
-        {
-            visualEffect.SendEvent("OnStopKitsune");
-            stopKitsune = false;
-        }
+    private IEnumerator PlayFirstMask()
+    {
+        yield return new WaitForSeconds(2f);
+        string firstMask = masks[maskIndex];
+        visualEffect.SetFloat($"{firstMask}_disperse", 0f);
+        visualEffect.SendEvent($"OnPlay{firstMask}");
+        yield return null;
+    }
+
+    private IEnumerator TransitionNextMask()
+    {
+        // disperse current mask
+        string currentMask = masks[maskIndex];
+        visualEffect.SetFloat($"{currentMask}_disperse", 100f);
+        yield return new WaitForSeconds(2);
+        // reint visual effect
+        visualEffect.Reinit();
+        // make sure disperse is 0 on next mask
+        maskIndex = (maskIndex + 1) % masks.Length;
+        string nextMask = masks[maskIndex];
+        visualEffect.SetFloat($"{nextMask}_disperse", 0f);
+        // play next mask
+        visualEffect.SendEvent($"OnPlay{nextMask}");
+        // update currentmask to next mask
+        yield return null;
     }
 }
