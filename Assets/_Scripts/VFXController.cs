@@ -53,8 +53,8 @@ public class VFXController : MonoBehaviour
     {
         // disperse current mask
         string currentMask = masks[maskIndex];
-        visualEffect.SetFloat("disperse", 100f);
-        yield return new WaitForSeconds(2);
+        visualEffect.SetFloat("disperse", -10f);
+        yield return new WaitForSeconds(1f);
         // reint visual effect
         visualEffect.Reinit();
         // update currentmask to next mask
@@ -71,8 +71,8 @@ public class VFXController : MonoBehaviour
     {
         // disperse current mask
         string currentMask = masks[maskIndex];
-        visualEffect.SetFloat("disperse", 100f);
-        yield return new WaitForSeconds(2);
+        visualEffect.SetFloat("disperse", 10f);
+        yield return new WaitForSeconds(1f);
         // reint visual effect
         visualEffect.Reinit();
         // update currentmask to previous mask
