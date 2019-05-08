@@ -16,10 +16,10 @@ MonoBehaviour:
   - title: Kitsune Maskj
     position:
       serializedVersion: 2
-      x: -64
-      y: -795
+      x: -69
+      y: -1059
       width: 1158
-      height: 1924
+      height: 2504
     contents:
     - model: {fileID: 8926484042661614609}
       id: 0
@@ -48,15 +48,21 @@ MonoBehaviour:
     - model: {fileID: 8926484042661615122}
       id: 0
       isStickyNote: 0
+    - model: {fileID: 8926484042661615165}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661615161}
+      id: 0
+      isStickyNote: 0
   stickyNoteInfos: []
   systemInfos: []
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: -64
-    y: -1027
+    x: -69
+    y: -1059
     width: 1158
-    height: 2443
+    height: 2504
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -721,7 +727,7 @@ MonoBehaviour:
   m_Children:
   - {fileID: 8926484042661614626}
   - {fileID: 8926484042661615074}
-  m_UIPosition: {x: 693, y: -732}
+  m_UIPosition: {x: 688, y: -728}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -755,7 +761,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615079}
   - {fileID: 8926484042661614648}
   - {fileID: 8926484042661614668}
-  m_UIPosition: {x: 691, y: -396}
+  m_UIPosition: {x: 686, y: -392}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -1244,7 +1250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 343, y: -117}
+  m_UIPosition: {x: 338, y: -113}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -2003,7 +2009,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615090}
   - {fileID: 8926484042661614746}
   - {fileID: 8926484042661615159}
-  m_UIPosition: {x: 691, y: 610}
+  m_UIPosition: {x: 686, y: 614}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -2690,7 +2696,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661614764}
       inputSlot: {fileID: 8926484042661614761}
-    position: {x: 463, y: 570}
+    position: {x: 302, y: 628}
     expandedSlots: []
     expanded: 1
 --- !u!114 &8926484042661614764
@@ -3365,7 +3371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 394, y: 380}
+  m_UIPosition: {x: 389, y: 384}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -3435,7 +3441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: -32, y: 218}
+  m_UIPosition: {x: -37, y: 222}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -3595,7 +3601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: -39, y: 408}
+  m_UIPosition: {x: -44, y: 412}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -4204,7 +4210,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661615123}
       inputSlot: {fileID: 8926484042661615160}
-    position: {x: 177, y: 884}
+    position: {x: 172, y: 888}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661615123
@@ -4709,7 +4715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 690, y: 1241}
+  m_UIPosition: {x: 686, y: 1245}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -4747,7 +4753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 459, y: -1027}
+  m_UIPosition: {x: 627, y: -996}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
