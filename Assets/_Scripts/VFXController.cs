@@ -8,9 +8,12 @@ public class VFXController : MonoBehaviour
     [SerializeField]
     private bool transitionNextMask = false;
 
+    [SerializeField]
+    private string[] masks;
+
     private VisualEffect visualEffect;
 
-    private string[] masks = new string[5];
+   
 
     private int maskIndex = 0;
 
@@ -18,11 +21,11 @@ public class VFXController : MonoBehaviour
     private void Start()
     {
         visualEffect = GetComponent<VisualEffect>();
-        masks[0] = "Kitsune";
-        masks[1] = "Hannya";
-        masks[2] = "Karura";
-        masks[3] = "Tengu";
-        masks[4] = "Usagi";
+        //masks[0] = "Kitsune";
+        //masks[1] = "Hannya";
+        //masks[2] = "Karura";
+        //masks[3] = "Tengu";
+        //masks[4] = "Usagi";
 
         StartCoroutine(PlayFirstMask());
     }
