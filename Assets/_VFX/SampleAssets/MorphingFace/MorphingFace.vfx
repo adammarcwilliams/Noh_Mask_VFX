@@ -871,75 +871,6 @@ MonoBehaviour:
     attributes: []
   m_Direction: 1
   m_LinkedSlots: []
---- !u!114 &114222174567722652
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70a331b1d86cc8d4aa106ccbe0da5852, type: 3}
-  m_Name: VFXSlotTexture2D
-  m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
-  m_Children: []
-  m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
-  m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114222174567722652}
-  m_MasterData:
-    m_Owner: {fileID: 114445314647950802}
-    m_Value:
-      m_Type:
-        m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: 
-    m_Space: 2147483647
-  m_Property:
-    name: 'AttributeMap : position'
-    m_serializedType:
-      m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    attributes: []
-  m_Direction: 1
-  m_LinkedSlots:
-  - {fileID: 8926484042661614696}
---- !u!114 &114226390283049586
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c52d920e7fff73b498050a6b3c4404ca, type: 3}
-  m_Name: VFXSlotUint
-  m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
-  m_Children: []
-  m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
-  m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114226390283049586}
-  m_MasterData:
-    m_Owner: {fileID: 114445314647950802}
-    m_Value:
-      m_Type:
-        m_SerializableType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 
-    m_Space: 2147483647
-  m_Property:
-    name: Point Count
-    m_serializedType:
-      m_SerializableType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-    attributes: []
-  m_Direction: 1
-  m_LinkedSlots: []
 --- !u!114 &114233154823581470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1889,11 +1820,7 @@ MonoBehaviour:
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
-  m_OutputSlots:
-  - {fileID: 114226390283049586}
-  - {fileID: 114222174567722652}
-  - {fileID: 8926484042661614679}
-  - {fileID: 8926484042661614721}
+  m_OutputSlots: []
   Asset: {fileID: -3256353808211938606, guid: f22b0df9941ca4d6bbd2d9adfc81f1f8, type: 3}
 --- !u!114 &114449178898447184
 MonoBehaviour:
@@ -2035,8 +1962,7 @@ MonoBehaviour:
       m_Regex: 
       m_RegexMaxLength: 0
   m_Direction: 0
-  m_LinkedSlots:
-  - {fileID: 8926484042661614679}
+  m_LinkedSlots: []
 --- !u!114 &114524990668425464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2605,7 +2531,6 @@ MonoBehaviour:
   preRefraction: 0
   materialType: 0
   onlyAmbientLighting: 0
-  diffusionProfileAsset: {fileID: 0}
   multiplyThicknessWithAlpha: 0
   useBaseColorMap: 0
   useMaskMap: 0
@@ -4116,406 +4041,37 @@ VisualEffectResource:
       0;\n\t\t\t}\n\t\t\tENDHLSL\n\t\t}\n\n\t}\n}\n"
   m_Infos:
     m_Expressions:
-      m_Expressions:
-      - op: 1
-        valueIndex: 0
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 7
-        valueIndex: 1
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: -1
-      - op: 26
-        valueIndex: 2
-        data[0]: 1
-        data[1]: 0
-        data[2]: -1
-        data[3]: 1
-      - op: 1
-        valueIndex: 3
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 22
-        valueIndex: 4
-        data[0]: 2
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 25
-        valueIndex: 5
-        data[0]: 4
-        data[1]: 3
-        data[2]: -1
-        data[3]: 1
-      - op: 1
-        valueIndex: 6
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 27
-        valueIndex: 7
-        data[0]: 6
-        data[1]: 5
-        data[2]: -1
-        data[3]: 1
-      - op: 1
-        valueIndex: 8
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 1
-        valueIndex: 9
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 1
-        valueIndex: 10
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 1
-        valueIndex: 11
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 1
-        valueIndex: 12
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 1
-        valueIndex: 13
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 13
-      - op: 1
-        valueIndex: 14
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 3
-      - op: 1
-        valueIndex: 17
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 3
-      - op: 1
-        valueIndex: 20
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 3
-      - op: 1
-        valueIndex: 23
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 2
-      - op: 50
-        valueIndex: 25
-        data[0]: 13
-        data[1]: -1
-        data[2]: -1
-        data[3]: 0
-      - op: 1
-        valueIndex: 29
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 1
-        valueIndex: 30
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 1
-        valueIndex: 31
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 3
-      - op: 1
-        valueIndex: 34
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 3
-      - op: 1
-        valueIndex: 37
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 3
-      - op: 1
-        valueIndex: 40
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 6
-      - op: 1
-        valueIndex: 41
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 7
-      - op: 1
-        valueIndex: 43
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 2
-      - op: 1
-        valueIndex: 45
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 2
-      - op: 1
-        valueIndex: 47
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 3
-      - op: 1
-        valueIndex: 50
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 1
-        valueIndex: 51
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
+      m_Expressions: []
       m_NeedsLocalToWorld: 0
       m_NeedsWorldToLocal: 0
       m_NeededMainCameraBuffers: 0
     m_PropertySheet:
       m_Float:
-        m_Array:
-        - m_ExpressionIndex: 0
-          m_Value: 2.5
-        - m_ExpressionIndex: 3
-          m_Value: 24
-        - m_ExpressionIndex: 6
-          m_Value: -12
-        - m_ExpressionIndex: 8
-          m_Value: 1
-        - m_ExpressionIndex: 9
-          m_Value: 6
-        - m_ExpressionIndex: 10
-          m_Value: 2
-        - m_ExpressionIndex: 11
-          m_Value: 3
-        - m_ExpressionIndex: 12
-          m_Value: -1
-        - m_ExpressionIndex: 19
-          m_Value: 45
-        - m_ExpressionIndex: 20
-          m_Value: -45
-        - m_ExpressionIndex: 29
-          m_Value: 0.7
-        - m_ExpressionIndex: 30
-          m_Value: 0.9
+        m_Array: []
       m_Vector2f:
-        m_Array:
-        - m_ExpressionIndex: 17
-          m_Value: {x: 10, y: 1}
-        - m_ExpressionIndex: 26
-          m_Value: {x: 0, y: 0}
-        - m_ExpressionIndex: 27
-          m_Value: {x: 10000, y: 10000}
+        m_Array: []
       m_Vector3f:
-        m_Array:
-        - m_ExpressionIndex: 14
-          m_Value: {x: 1, y: 1, z: 1}
-        - m_ExpressionIndex: 15
-          m_Value: {x: 0.30343592, y: 0.3962264, z: 0.2747419}
-        - m_ExpressionIndex: 16
-          m_Value: {x: -0.10515237, y: 1.0932078, z: 0.5538113}
-        - m_ExpressionIndex: 21
-          m_Value: {x: 0, y: 0.19136065, z: 0.9339623}
-        - m_ExpressionIndex: 22
-          m_Value: {x: 25, y: 25, z: 25}
-        - m_ExpressionIndex: 23
-          m_Value: {x: 0, y: 0, z: 0}
-        - m_ExpressionIndex: 28
-          m_Value: {x: 5.663672, y: 8.102428, z: 4.1472497}
+        m_Array: []
       m_Vector4f:
         m_Array: []
       m_Uint:
-        m_Array:
-        - m_ExpressionIndex: 24
-          m_Value: 0
+        m_Array: []
       m_Int:
         m_Array: []
       m_Matrix4x4f:
         m_Array: []
       m_AnimationCurve:
-        m_Array:
-        - m_ExpressionIndex: 13
-          m_Value:
-            serializedVersion: 2
-            m_Curve:
-            - serializedVersion: 3
-              time: 0
-              value: 0
-              inSlope: 0
-              outSlope: 0
-              tangentMode: 0
-              weightedMode: 0
-              inWeight: 0
-              outWeight: 0
-            - serializedVersion: 3
-              time: 1
-              value: 4.9752197
-              inSlope: 9.853001
-              outSlope: 9.853001
-              tangentMode: 0
-              weightedMode: 0
-              inWeight: 0
-              outWeight: 0
-            m_PreInfinity: 2
-            m_PostInfinity: 2
-            m_RotationOrder: 4
+        m_Array: []
       m_Gradient:
         m_Array: []
       m_NamedObject:
-        m_Array:
-        - m_ExpressionIndex: 25
-          m_Value: {fileID: 6918954641851045129, guid: f22b0df9941ca4d6bbd2d9adfc81f1f8,
-            type: 3}
+        m_Array: []
       m_Bool:
         m_Array: []
     m_ExposedExpressions: []
-    m_Buffers:
-    - type: 1
-      size: 120000
-      layout:
-      - name: position
-        type: 3
-        offset:
-          bucket: 0
-          structure: 12
-          element: 0
-      - name: angleX
-        type: 1
-        offset:
-          bucket: 0
-          structure: 12
-          element: 3
-      - name: color
-        type: 3
-        offset:
-          bucket: 0
-          structure: 12
-          element: 4
-      - name: angleZ
-        type: 1
-        offset:
-          bucket: 0
-          structure: 12
-          element: 7
-      - name: scaleY
-        type: 1
-        offset:
-          bucket: 0
-          structure: 12
-          element: 8
-      capacity: 10000
-      stride: 4
-    - type: 1
-      size: 120576
-      layout:
-      - name: position
-        type: 3
-        offset:
-          bucket: 0
-          structure: 12
-          element: 0
-      - name: angleX
-        type: 1
-        offset:
-          bucket: 0
-          structure: 12
-          element: 3
-      - name: color
-        type: 3
-        offset:
-          bucket: 0
-          structure: 12
-          element: 4
-      - name: angleZ
-        type: 1
-        offset:
-          bucket: 0
-          structure: 12
-          element: 7
-      - name: scaleY
-        type: 1
-        offset:
-          bucket: 0
-          structure: 12
-          element: 8
-      capacity: 10048
-      stride: 4
-    - type: 1
-      size: 1
-      layout:
-      - name: spawnCount
-        type: 1
-        offset:
-          bucket: 0
-          structure: 1
-          element: 0
-      capacity: 1
-      stride: 4
-    m_CPUBuffers:
-    - capacity: 1
-      stride: 1
-      layout:
-      - name: spawnCount
-        type: 1
-        offset:
-          bucket: 0
-          structure: 1
-          element: 0
-      initialData:
-        data: 00000000
-    - capacity: 1
-      stride: 1
-      layout:
-      - name: spawnCount
-        type: 1
-        offset:
-          bucket: 0
-          structure: 1
-          element: 0
-      initialData:
-        data: 00000000
-    m_Events:
-    - name: OnPlay
-      playSystems: 00000000
-      stopSystems: 
-    - name: OnStop
-      playSystems: 
-      stopSystems: 00000000
+    m_Buffers: []
+    m_CPUBuffers: []
+    m_Events: []
     m_RuntimeVersion: 8
     m_RendererSettings:
       motionVectorGenerationMode: 0
@@ -4527,73 +4083,7 @@ VisualEffectResource:
     m_UpdateMode: 0
     m_PreWarmDeltaTime: 0.05
     m_PreWarmStepCount: 0
-  m_Systems:
-  - type: 0
-    flags: 0
-    capacity: 0
-    layer: 4294967295
-    buffers:
-    - nameId: spawner_output
-      index: 1
-    values: []
-    tasks:
-    - type: 268435457
-      buffers: []
-      values:
-      - nameId: Count
-        index: 27
-      - nameId: Delay
-        index: 26
-      params: []
-      processor: {fileID: 0}
-      shaderSourceIndex: -1
-  - type: 1
-    flags: 0
-    capacity: 10000
-    layer: 4294967295
-    buffers:
-    - nameId: attributeBuffer
-      index: 0
-    - nameId: sourceAttributeBuffer
-      index: 2
-    - nameId: spawner_input
-      index: 1
-    values:
-    - nameId: bounds_center
-      index: 16
-    - nameId: bounds_size
-      index: 28
-    tasks:
-    - type: 536870912
-      buffers:
-      - nameId: attributeBuffer
-        index: 0
-      - nameId: sourceAttributeBuffer
-        index: 2
-      values:
-      - nameId: Scale_e
-        index: 18
-      - nameId: attributeMap_a
-        index: 25
-      params:
-      - nameId: bounds_center
-        index: 16
-      - nameId: bounds_size
-        index: 28
-      processor: {fileID: 0}
-      shaderSourceIndex: 0
-    - type: 1073741827
-      buffers:
-      - nameId: attributeBuffer
-        index: 0
-      values:
-      - nameId: uniform_b
-        index: 7
-      params:
-      - nameId: sortPriority
-        index: 0
-      processor: {fileID: 0}
-      shaderSourceIndex: 1
+  m_Systems: []
 --- !u!114 &8926484042661614528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6211,41 +5701,6 @@ MonoBehaviour:
     attributes: []
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &8926484042661614679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70a331b1d86cc8d4aa106ccbe0da5852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
-  m_Children: []
-  m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
-  m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 8926484042661614679}
-  m_MasterData:
-    m_Owner: {fileID: 114445314647950802}
-    m_Value:
-      m_Type:
-        m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: 
-    m_Space: 2147483647
-  m_Property:
-    name: 'AttributeMap : normal'
-    m_serializedType:
-      m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    attributes: []
-  m_Direction: 1
-  m_LinkedSlots:
-  - {fileID: 114498882693218620}
 --- !u!114 &8926484042661614696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6285,8 +5740,7 @@ MonoBehaviour:
       m_Regex: 
       m_RegexMaxLength: 0
   m_Direction: 0
-  m_LinkedSlots:
-  - {fileID: 114222174567722652}
+  m_LinkedSlots: []
 --- !u!114 &8926484042661614697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6367,7 +5821,6 @@ MonoBehaviour:
   preRefraction: 0
   materialType: 0
   onlyAmbientLighting: 0
-  diffusionProfileAsset: {fileID: 0}
   multiplyThicknessWithAlpha: 0
   useBaseColorMap: 3
   useMaskMap: 0
@@ -6627,40 +6080,6 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
     attributes: []
   m_Direction: 0
-  m_LinkedSlots: []
---- !u!114 &8926484042661614721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70a331b1d86cc8d4aa106ccbe0da5852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
-  m_Children: []
-  m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
-  m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 8926484042661614721}
-  m_MasterData:
-    m_Owner: {fileID: 114445314647950802}
-    m_Value:
-      m_Type:
-        m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: 
-    m_Space: 2147483647
-  m_Property:
-    name: 'AttributeMap : color'
-    m_serializedType:
-      m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    attributes: []
-  m_Direction: 1
   m_LinkedSlots: []
 --- !u!114 &8926484042661614722
 MonoBehaviour:
