@@ -34,7 +34,6 @@ public class MasksController : MonoBehaviour
 
     public void PlayMaskDescription ()
     {
-        Debug.Log("PlayMaskDescription");
         AudioClip description = masks[maskIndex].AudioDescription;
         if (description)
         {
