@@ -18,6 +18,7 @@ public class MasksController : MonoBehaviour
     private void Start()
     {
         visualEffect = GetComponent<VisualEffect>();
+        audioSource = GetComponent<AudioSource>();
         StartCoroutine(PlayFirstMask());
     }
 
@@ -33,6 +34,7 @@ public class MasksController : MonoBehaviour
 
     public void PlayMaskDescription ()
     {
+        Debug.Log("PlayMaskDescription");
         AudioClip description = masks[maskIndex].AudioDescription;
         if (description)
         {
