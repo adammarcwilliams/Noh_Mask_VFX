@@ -3,17 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.VFX;
 
-public class VFXController : MonoBehaviour
+public class MasksController : MonoBehaviour
 {
     [SerializeField]
     private bool transitionNextMask = false;
 
     private VisualEffect visualEffect;
-
     private string[] masks = new string[5];
-
     private int maskIndex = 0;
 
+    public void NextMask()
+    {
+        StartCoroutine(TransitionNextMask());
+    }
+
+    public void PreviousMask()
+    {
+        StartCoroutine(TransitionPreviousMask());
+    }
 
     private void Start()
     {
@@ -46,7 +53,7 @@ public class VFXController : MonoBehaviour
         yield return null;
     }
 
-    public IEnumerator TransitionNextMask()
+    private IEnumerator TransitionNextMask()
     {
         // disperse current mask
         string currentMask = masks[maskIndex];
@@ -64,7 +71,7 @@ public class VFXController : MonoBehaviour
         yield return null;
     }
 
-    public IEnumerator TransitionPreviousMask()
+    private IEnumerator TransitionPreviousMask()
     {
         // disperse current mask
         string currentMask = masks[maskIndex];
