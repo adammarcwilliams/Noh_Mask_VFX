@@ -3,14 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.VFX;
 
+[RequireComponent(typeof(VisualEffect))]
+[RequireComponent(typeof(AudioSource))]
 public class MasksController : MonoBehaviour
 {
     [SerializeField]
-    private bool transitionNextMask = false;
+    private Mask[] masks;
 
     private VisualEffect visualEffect;
-    private string[] masks = new string[5];
+    private AudioSource audioSource;
+
     private int maskIndex = 0;
+
+    private void Start()
+    {
+        visualEffect = GetComponent<VisualEffect>();
+        StartCoroutine(PlayFirstMask());
+    }
 
     public void NextMask()
     {
@@ -22,33 +31,23 @@ public class MasksController : MonoBehaviour
         StartCoroutine(TransitionPreviousMask());
     }
 
-    private void Start()
+    public void PlayMaskDescription ()
     {
-        visualEffect = GetComponent<VisualEffect>();
-        masks[0] = "Kitsune";
-        masks[1] = "Hannya";
-        masks[2] = "Karura";
-        masks[3] = "Tengu";
-        masks[4] = "Usagi";
-
-        StartCoroutine(PlayFirstMask());
-    }
-
-
-    private void Update()
-    {
-        if (transitionNextMask)
+        AudioClip description = masks[maskIndex].AudioDescription;
+        if (description)
         {
-            StartCoroutine(TransitionNextMask());
-            transitionNextMask = false;
+            audioSource.clip = description;
+            audioSource.Play();
         }
     }
 
+
     private IEnumerator PlayFirstMask()
     {
+        // VFX seems to require delay on start
+        // before calling an event??
         yield return new WaitForSeconds(2f);
-        string firstMask = masks[maskIndex];
-        visualEffect.SetFloat("disperse", 0f);
+        string firstMask = masks[maskIndex].MaskName;
         visualEffect.SendEvent($"OnPlay{firstMask}");
         yield return null;
     }
@@ -56,14 +55,14 @@ public class MasksController : MonoBehaviour
     private IEnumerator TransitionNextMask()
     {
         // disperse current mask
-        string currentMask = masks[maskIndex];
+        string currentMask = masks[maskIndex].MaskName;
         visualEffect.SetFloat("disperse", -10f);
         yield return new WaitForSeconds(1f);
-        // reint visual effect
+        // reinit visual effect
         visualEffect.Reinit();
         // update currentmask to next mask
         maskIndex = (maskIndex + 1) % masks.Length;
-        string nextMask = masks[maskIndex];
+        string nextMask = masks[maskIndex].MaskName;
         // make sure disperse is 0 on next mask
         visualEffect.SetFloat("disperse", 0f);
         // play next mask
@@ -74,10 +73,10 @@ public class MasksController : MonoBehaviour
     private IEnumerator TransitionPreviousMask()
     {
         // disperse current mask
-        string currentMask = masks[maskIndex];
+        string currentMask = masks[maskIndex].MaskName;
         visualEffect.SetFloat("disperse", 10f);
         yield return new WaitForSeconds(1f);
-        // reint visual effect
+        // reinit visual effect
         visualEffect.Reinit();
         // update currentmask to previous mask
         if (maskIndex == 0)
@@ -89,7 +88,7 @@ public class MasksController : MonoBehaviour
             maskIndex = (maskIndex - 1);
         }
 
-        string previousMask = masks[maskIndex];
+        string previousMask = masks[maskIndex].MaskName;
         // make sure disperse is 0 on next mask
         visualEffect.SetFloat("disperse", 0f);
         // play previous mask
