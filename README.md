@@ -6,21 +6,19 @@ This touch screen interactive takes several common masks from traditional Japane
 
 Each mask is accompanied by a short audio clip describing the characteristics the mask commonly imbues during the play, from mischievous spirits to jealous demons.
 
+<a href="https://gyazo.com/e71ca6e504736778cf73eb3d8353ebb9"><video alt="Video from Gyazo" width="800" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/e71ca6e504736778cf73eb3d8353ebb9.mp4" type="video/mp4" /></video></a>
+
 ## Project Details
 
-* Unity: 2019.1.1f1
-* LWRP: 5.13
-* Visual Effect Graph: 5.13.0 - preview package
-* Post Processing: 2.1.6
-* Designed for 16:9 aspect ratio 1920 x 1080
+- Unity: 2019.1.1f1
+- LWRP: 5.13
+- Visual Effect Graph: 5.13.0 - preview package
+- Post Processing: 2.1.6
+- Designed for 16:9 aspect ratio 1920 x 1080
 
-You can clone this repo and run the project in your editor/build for supported platforms or if using a PC simply download the build below.
+You can clone this repo and run the project in your editoror if using a PC simply download and unzip the build below.
 
-Visual Effects Graph requires a modern graphics card that supports compute shaders.
-
-My test machines were:
-* Window 10 PC with i7 CPU and NVIDIA GTX 1060 graphics
-* 27" 5k iMac with i5 CPU and Radeon R9 M395 graphics
+PC Build: https://drive.google.com/open?id=1odhI_ndOzJWwQqEJqbVV296csyYpu_Tf
 
 I used Unity's LWRP which has experimental support for the Visual Effects Graph in the latest version (unlit particles only) in the hopes that I could build the project to my iPhone XR.
 
@@ -28,8 +26,9 @@ After testing I found that at present, the performance was not good enough and I
 
 This is something I plan to explore further with a VR port to my Oculus GO using OpenGL ES 3.1 to see if it is only an issue with Metal in the current preview package.
 
-PC Build: 
+Once I had decided this current version was not going to be built for mobile, I increased the number of sampled points per mask for higher fidelity and added post-processing effects, so the project will require a fairly fast machine with decent graphics card to run properly.
 
+My test machine was a Window 10 PC with i7 CPU and NVIDIA GTX 1060 graphics
 
 ## Technical Overview
 
@@ -44,7 +43,6 @@ Input is handled by a simple script that works with mouse/single finger touch to
 I used a Scriptable Object based event system inspired by this [Unite talk by Ryan Hipple](https://www.youtube.com/watch?v=raQ3iHhE_Kk), which allows events to be created and used like assets. You can then listen for them with a simple GameEventListener that exposes a Unity Event, making it easy to create decoupled code that doesn't rely on any singleton manager classes.
 
 I also used Scriptable Objects for the Mask to keep the name string(required for the VFX Graph events) and audio clips packaged neatly inside an asset.
-
 
 ## Future Iterations
 
