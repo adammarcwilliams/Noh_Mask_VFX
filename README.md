@@ -6,7 +6,7 @@ This touch screen interactive takes several common masks from traditional Japane
 
 Each mask is accompanied by a short audio clip describing the characteristics the mask commonly imbues during the play, from mischievous spirits to jealous demons.
 
-<a href="https://gyazo.com/e71ca6e504736778cf73eb3d8353ebb9"><video alt="Video from Gyazo" width="800" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/e71ca6e504736778cf73eb3d8353ebb9.mp4" type="video/mp4" /></video></a>
+[![Image from Gyazo](https://i.gyazo.com/e71ca6e504736778cf73eb3d8353ebb9.gif)](https://gyazo.com/e71ca6e504736778cf73eb3d8353ebb9)
 
 ## Project Details
 
