@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Usagi
   m_EditorClassIdentifier: 
   MaskName: Usagi
-  AudioDescription: {fileID: 8300000, guid: c0346a43ada9f456982f834ad3dc2278, type: 3}
+  AudioDescription: {fileID: 8300000, guid: a77c4e07da171564e90acdc275c635f0, type: 3}

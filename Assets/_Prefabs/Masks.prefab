@@ -45,7 +45,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3322222078683280019}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 1d492217841d14ea09335643fda21372, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: 9c8811a7ca5fe36438f248596a4bd7c8, type: 3}
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
   m_PropertySheet:
@@ -129,9 +129,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   masks:
   - {fileID: 11400000, guid: 2806b418d3eb1438c81157a001408adb, type: 2}
-  - {fileID: 11400000, guid: e33753b21704946858c357023c42c01d, type: 2}
   - {fileID: 11400000, guid: acf93a37b775543dda1a6715b115c904, type: 2}
   - {fileID: 11400000, guid: 8b7ea223f49324b77a7a2f4da8c6e697, type: 2}
+  - {fileID: 11400000, guid: e33753b21704946858c357023c42c01d, type: 2}
   - {fileID: 11400000, guid: ce47e1838a51c4350a76de7557ed7111, type: 2}
 --- !u!114 &3322222078683280025
 MonoBehaviour:

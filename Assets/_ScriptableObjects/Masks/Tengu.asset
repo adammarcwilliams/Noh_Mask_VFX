@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Tengu
   m_EditorClassIdentifier: 
   MaskName: Tengu
-  AudioDescription: {fileID: 8300000, guid: c0346a43ada9f456982f834ad3dc2278, type: 3}
+  AudioDescription: {fileID: 8300000, guid: 1c25eae368602a9448da4e419ee5c10a, type: 3}

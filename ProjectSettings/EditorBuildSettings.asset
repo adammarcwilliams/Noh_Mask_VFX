@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/_Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 0
-    path: Assets/_Scenes/001.unity
+    path: Assets/_Scenes/Masks.unity
     guid: 32485d435a87c436ea8f99aad209558c
   m_configObjects: {}

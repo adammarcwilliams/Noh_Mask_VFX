@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Hannya
   m_EditorClassIdentifier: 
   MaskName: Hannya
-  AudioDescription: {fileID: 8300000, guid: c0346a43ada9f456982f834ad3dc2278, type: 3}
+  AudioDescription: {fileID: 8300000, guid: 3e081dbf7dc53844c9819318cd9b7554, type: 3}

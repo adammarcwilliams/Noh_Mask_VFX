@@ -55,7 +55,7 @@ public class MasksController : MonoBehaviour
 
     private IEnumerator TransitionNextMask()
     {
-        // disperse current mask
+        // disperse current mask offscreen left
         string currentMask = masks[maskIndex].MaskName;
         visualEffect.SetFloat("disperse", -10f);
         yield return new WaitForSeconds(1f);
@@ -73,7 +73,7 @@ public class MasksController : MonoBehaviour
 
     private IEnumerator TransitionPreviousMask()
     {
-        // disperse current mask
+        // disperse current mask offscreen right
         string currentMask = masks[maskIndex].MaskName;
         visualEffect.SetFloat("disperse", 10f);
         yield return new WaitForSeconds(1f);
@@ -86,7 +86,7 @@ public class MasksController : MonoBehaviour
         }
         else
         {
-            maskIndex = (maskIndex - 1);
+            maskIndex = maskIndex - 1;
         }
 
         string previousMask = masks[maskIndex].MaskName;

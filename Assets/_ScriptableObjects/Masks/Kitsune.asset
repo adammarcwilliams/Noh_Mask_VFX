@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Kitsune
   m_EditorClassIdentifier: 
   MaskName: Kitsune
-  AudioDescription: {fileID: 8300000, guid: c0346a43ada9f456982f834ad3dc2278, type: 3}
+  AudioDescription: {fileID: 8300000, guid: c42f31eb2e4ac5348836c93283e05a10, type: 3}

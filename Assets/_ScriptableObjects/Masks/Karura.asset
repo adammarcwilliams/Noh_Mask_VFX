@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Karura
   m_EditorClassIdentifier: 
   MaskName: Karura
-  AudioDescription: {fileID: 8300000, guid: c0346a43ada9f456982f834ad3dc2278, type: 3}
+  AudioDescription: {fileID: 8300000, guid: 1342630b449fc4247a67a54e931d0d60, type: 3}
