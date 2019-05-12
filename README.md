@@ -16,7 +16,7 @@ Each mask is accompanied by a short audio clip describing the characteristics th
 - Post Processing: 2.1.6
 - Designed for 16:9 aspect ratio 1920 x 1080
 
-You can clone this repo and run the project in your editoror if using a PC simply download and unzip the build below.
+You can clone this repo and run the project in your editor, or if using a PC simply download and unzip the build below.
 
 PC Build: https://drive.google.com/open?id=1odhI_ndOzJWwQqEJqbVV296csyYpu_Tf
 
@@ -26,9 +26,9 @@ After testing I found that at present, the performance was not good enough and I
 
 This is something I plan to explore further with a VR port to my Oculus GO using OpenGL ES 3.1 to see if it is only an issue with Metal in the current preview package.
 
-Once I had decided this current version was not going to be built for mobile, I increased the number of sampled points per mask for higher fidelity and added post-processing effects, so the project will require a fairly fast machine with decent graphics card to run properly.
+Once I had decided this current version was not going to be built for mobile, I increased the number of sampled points per mask for higher fidelity and added post-processing effects, so the project will require a fairly fast machine with a decent graphics card to run properly.
 
-My test machine was a Window 10 PC with i7 CPU and NVIDIA GTX 1060 graphics
+My test machine was a Window 10 PC with i7 CPU and NVIDIA GTX 1060 graphics.
 
 ## Technical Overview
 
@@ -46,6 +46,6 @@ I also used Scriptable Objects for the Mask to keep the name string(required for
 
 ## Future Iterations
 
-Part of the magic of Noh mask's are the different emotions they convey by tilting them at slightly different angles, so it would be good to take the interactive into an AR app where the mask tracks the users face position, allowing them to explore this in a fun way.
+Part of the magic of Noh masks are the different emotions they convey by tilting them at slightly different angles, so it would be good to take the interactive into an AR app where the mask tracks the users face position, allowing them to explore this in a fun way.
 
 This is something I plan to do once the performance issue with iOS/Metal has been resolved.
