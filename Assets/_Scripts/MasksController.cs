@@ -8,7 +8,7 @@ using UnityEngine.Experimental.VFX;
 public class MasksController : MonoBehaviour
 {
     [SerializeField]
-    private Mask[] masks;
+    private Mask[] masks = null;
 
     private VisualEffect visualEffect;
     private AudioSource audioSource;

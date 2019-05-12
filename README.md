@@ -50,4 +50,4 @@ I also used Scriptable Objects for the Mask to keep the name string(required for
 
 Part of the magic of Noh mask's are the different emotions they convey by tilting them at slightly different angles, so it would be good to take the interactive into an AR app where the mask tracks the users face position, allowing them to explore this in a fun way.
 
-This is something I plan to do once the performance issue with iOS/Metal have been resolved.
+This is something I plan to do once the performance issue with iOS/Metal has been resolved.

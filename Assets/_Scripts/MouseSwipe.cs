@@ -5,9 +5,9 @@ using UnityEngine;
 public class MouseSwipe : MonoBehaviour
 {
     [SerializeField]
-    private GameEvent swipeLeft;
+    private GameEvent swipeLeft = null;
     [SerializeField]
-    private GameEvent swipeRight;
+    private GameEvent swipeRight = null;
 
     private Vector2 firstPressPos;
     private Vector2 secondPressPos;
