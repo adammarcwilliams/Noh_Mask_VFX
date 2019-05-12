@@ -91,7 +91,7 @@ public class MasksController : MonoBehaviour
 
         string previousMask = masks[maskIndex].MaskName;
         // reset insensity to default
-        visualEffect.SetFloat("disperse", 0.2f);
+        visualEffect.SetFloat("intensity", 0.2f);
         // play previous mask
         visualEffect.SendEvent($"OnPlay{previousMask}");
         yield return null;
